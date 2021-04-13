@@ -1,15 +1,15 @@
 
 /* mi faccio un arrey che contenga tutti i miei 100 numeri */
-listaNumeri = [];
+var listaNumeri = [];
 
 /* con un ciclo for posso incrementare il mio arrey di un numero fino ad arrivare a 100 */
 for (var i = 1; i <= 100; i++) {
 
     /* devinisco i valori all'interno dell'arrey in base ai multipli */
-    numero = i;
-    multiplo3 = numero % 3 === 0;
-    multiplo5 = numero % 5 === 0;
-    multipler35 = (numero % 3 === 0 && numero % 5 === 0);
+    var numero = i;
+    var multiplo3 = numero % 3 === 0;
+    var multiplo5 = numero % 5 === 0;
+    var multipler35 = (numero % 3 === 0 && numero % 5 === 0);
 
     if (multipler35) {
         listaNumeri.push("FizzBuzz");
